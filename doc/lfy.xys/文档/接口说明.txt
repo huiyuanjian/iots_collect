@@ -1,0 +1,37 @@
+接口说明
+
+1、抽奖接口：
+
+接口url ---  http://ip:port/gome/prizepoolinfo/judgePrize/public/{wechatId}
+wechatId 为 参数 用户微信openid
+举例为：http://localhost:8080/gome/prizepoolinfo/judgePrize/public/13253
+
+开发文件：PrizePoolInfoController.java
+
+2、个人信息 接口： 
+
+接口url ---  http://ip:port/gome/memberinfo/getMemberInfo/public/{wechatId}
+参数 wechatId ：用户的微信id，唯一标识，openId
+举例为：http://localhost:8080/gome/memberinfo/getMemberInfo/public/cea34v2fa1
+
+开发文件：MemberInfoController.java
+
+3、签到接口
+
+接口url ---  http://ip:port/gome/signhistory/signIn/public/{wechatId}
+参数 wechatId ：用户的微信id，唯一标识，openId  
+举例为：http://localhost:8080/gome/signhistory/signIn/public/13253
+
+开发文件：SignHistoryController.java
+
+4. 签到历史记录接口
+
+接口url ---  http://ip:port/gome/signhistory/querySignInHistory/public/{wechatId}
+参数 wechatId ：用户的微信id，唯一标识，openId  
+举例为：http://localhost:8080/gome/signhistory/querySignInHistory/public/cea34v2fa1
+
+开发文件：SignHistoryServiceImpl.java
+
+5. 收货人信息修改（没有时添加）接口
+6. 中奖记录列表接口
+7. 中奖记录使用接口
